@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:quran_app/models/surah_model.dart';
 import 'package:quran_app/repository/service_quran.dart';

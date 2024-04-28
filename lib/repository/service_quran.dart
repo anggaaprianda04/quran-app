@@ -4,11 +4,8 @@ import 'package:quran_app/models/surah_model.dart';
 class RepositoryQuran {
   final Dio? _dio;
   final String apiUrl = 'https://api.quran.gading.dev';
-  final CancelToken? _cancelToken;
 
-  RepositoryQuran({Dio? dio, CancelToken? cancelToken})
-      : _dio = dio,
-        _cancelToken = cancelToken;
+  RepositoryQuran({Dio? dio, CancelToken? cancelToken}) : _dio = dio;
 
   Future<List<SurahModel>> getSurah() async {
     try {
